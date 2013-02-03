@@ -21,7 +21,7 @@ Run Istanbul coverage on JS in the browser through an HTTP proxy
     -V, --version                    output the version number
     -p, --port [port]                The HTTP port to listen on
     -r, --reportDir [path]           The directory in which to write HTML report
-ing files.
+                                     ing files.
     -t, --reportingTimeout [millis]  How long after window.onload the coverage
                                      report should be reported to the server. If
                                      set to 0, coverage will not be reported.
