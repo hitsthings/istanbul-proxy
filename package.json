@@ -1,0 +1,45 @@
+{
+  "name": "istanbul-proxy",
+  "description": "Run Istanbul coverage on JS in the browser through an HTTP proxy",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hitsthings/istanbul-proxy",
+  "author": {
+    "name": "Adam Ahmed",
+    "email": "hitsthings@gmail.com",
+    "url": "http://noiregrets.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hitsthings/istanbul-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hitsthings/istanbul-proxy/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hitsthings/istanbul-proxy/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index",
+  "bin": {
+    "istanbul-proxy": "bin/istanbul-proxy"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies" : {
+    "istanbul" : "latest",
+    "temp" : "latest",
+    "connect" : "latest",
+    "url2path" : "latest",
+    "mkdirp" : ">=0.3.3"
+  },
+  "//devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": []
+}

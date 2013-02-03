@@ -1,0 +1,19 @@
+#!/usr/env/node
+var program = require('commander');
+
+program
+  .version(require('../package.json').version)
+  .option('-p, --port [port]', 'The HTTP port to listen on')
+  .option('-r, --reportDir [path]', 'The directory in which to write HTML reporting files.')
+  .option('-t, --reportingTimeout [millis]', 'How long after window.onload the coverage report should be reported to the server. If set to 0, coverage will not be reported. Your pages must then call istanbulProxy.sendReport() when finished.')
+  .option('-n, --passThroughUrls [urls]', 'URLs that should not be instrumented')
+  .parse(process.argv);
+
+require('../index')({
+    port : program.port,
+    reportDir : program.reportDir,
+    reportingTimeout : program.reportingTimeout,
+    passThroughUrls : typeof program.passThroughUrls === 'string' ?
+        program.passThroughUrls.split(/\s+/g) :
+        program.passThroughUrls
+});
