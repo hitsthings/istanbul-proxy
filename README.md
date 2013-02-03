@@ -42,6 +42,7 @@ Proxy server running on port 6984
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
 
 ## Release History
+0.1.1 - Fix bin hookup
 0.1.0 - Initial release.
 
 ## License
