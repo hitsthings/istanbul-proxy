@@ -1,7 +1,7 @@
 {
   "name": "istanbul-proxy",
   "description": "Run Istanbul coverage on JS in the browser through an HTTP proxy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/hitsthings/istanbul-proxy",
   "author": {
     "name": "Adam Ahmed",
@@ -36,7 +36,8 @@
     "temp" : "latest",
     "connect" : "latest",
     "url2path" : "latest",
-    "mkdirp" : ">=0.3.3"
+    "mkdirp" : ">=0.3.3",
+    "commander" : "latest"
   },
   "//devDependencies": {
     "grunt": "~0.3.17"
