@@ -7,6 +7,7 @@ program
   .option('-r, --reportDir [path]', 'The directory in which to write HTML reporting files.')
   .option('-t, --reportingTimeout [millis]', 'How long after window.onload the coverage report should be reported to the server. If set to 0, coverage will not be reported. Your pages must then call istanbulProxy.sendReport() when finished.')
   .option('-n, --passThroughUrls [urls]', 'URLs that should not be instrumented')
+  .option('-i, --includeRegex [pattern]', 'Pattern that will shoul be instrumented')
   .parse(process.argv);
 
 require('../index')({
@@ -15,5 +16,6 @@ require('../index')({
     reportingTimeout : program.reportingTimeout,
     passThroughUrls : typeof program.passThroughUrls === 'string' ?
         program.passThroughUrls.split(/\s+/g) :
-        program.passThroughUrls
+        program.passThroughUrls,
+    includeRegex: typeof program.includeRegex === 'string' ? program.includeRegex: "."
 });
