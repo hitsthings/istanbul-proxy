@@ -34,7 +34,7 @@
   "dependencies" : {
     "istanbul" : "latest",
     "temp" : "latest",
-    "connect" : "latest",
+    "connect" : "1.x",
     "url2path" : "latest",
     "mkdirp" : ">=0.3.3",
     "commander" : "latest"
